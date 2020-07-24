@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stefa\\source\\repos\\Mentormate\\Mentormate\\Mentormate.csproj",
+      "projectUniqueName": "C:\\Users\\stefa\\Documents\\GitHub\\Mentormate-Internship\\Mentormate\\Mentormate.csproj",
       "projectName": "Mentormate",
-      "projectPath": "C:\\Users\\stefa\\source\\repos\\Mentormate\\Mentormate\\Mentormate.csproj",
+      "projectPath": "C:\\Users\\stefa\\Documents\\GitHub\\Mentormate-Internship\\Mentormate\\Mentormate.csproj",
       "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stefa\\source\\repos\\Mentormate\\Mentormate\\obj\\",
+      "outputPath": "C:\\Users\\stefa\\Documents\\GitHub\\Mentormate-Internship\\Mentormate\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

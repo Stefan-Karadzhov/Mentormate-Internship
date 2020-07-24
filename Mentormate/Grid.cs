@@ -13,7 +13,7 @@ namespace Mentormate
 
         public int col { get; set; }
 
-        public int  Generations(Cell[,] Array,int searchX,int searchY,int N) // make the return value-int and make comments
+        public int  Generations(Cell[,] Array,int searchX,int searchY,int N) 
         {
            
             while (N!=0)
@@ -22,7 +22,8 @@ namespace Mentormate
                 {
                     for (int y = 0; y < col; y++)
                     {
-                        if (x == 0 && y == 0)
+                        //Divide the array in 9 part and check the position of the cell
+                        if (x == 0 && y == 0)          //top left corner
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -69,8 +70,8 @@ namespace Mentormate
                                     Array[x, y].tempState = 0;
                                 }
                             }
-                        }//===
-                        if (x == 0 && y > 0 && y < col - 1)
+                        }
+                        if (x == 0 && y > 0 && y < col - 1) //top mid part
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -130,9 +131,9 @@ namespace Mentormate
                                     Array[x, y].tempState = 0;
                                 }
                             }
-                        }//==
+                        }
 
-                        if (x == 0 && y == col-1)
+                        if (x == 0 && y == col-1) //top right corner
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -181,7 +182,7 @@ namespace Mentormate
                             }
                         }
 
-                        if (x > 0 && x < row - 1 && y == 0)
+                        if (x > 0 && x < row - 1 && y == 0) //middle left part
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -245,7 +246,7 @@ namespace Mentormate
                             }
                         }
 
-                        if (x > 0 && x < row - 1 && y == col - 1)
+                        if (x > 0 && x < row - 1 && y == col - 1)//middle right part
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -308,7 +309,7 @@ namespace Mentormate
 
 
                         }
-                        if (x > 0 && x < row - 1 && y > 0 && y < col - 1)
+                        if (x > 0 && x < row - 1 && y > 0 && y < col - 1)// middle part
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -393,7 +394,7 @@ namespace Mentormate
                                 }
                             }
                         }
-                        if (x == row - 1 && y == 0)
+                        if (x == row - 1 && y == 0)// bottom left corner
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -438,7 +439,7 @@ namespace Mentormate
                                 }
                             }
                         }
-                        if (x == row - 1 && y == col - 1)
+                        if (x == row - 1 && y == col - 1)// bottom right corner
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -484,7 +485,7 @@ namespace Mentormate
                             }
                         }
 
-                        if (x == row - 1 && y > 0 && y < col - 1)
+                        if (x == row - 1 && y > 0 && y < col - 1) //bottom mid part
                         {
                             if (Array[x, y].State == 0)
                             {
@@ -547,7 +548,7 @@ namespace Mentormate
                         }
                     }
                 }
-                for (int i = 0; i < row; i++)
+                for (int i = 0; i < row; i++) 
                 {
                     for (int j = 0; j < col; j++)
                     {
